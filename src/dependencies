@@ -1,0 +1,4 @@
+controller.o: controller.cc datastruct.h debug.h init.h controller.h
+fileIO.o: fileIO.cc datastruct.h debug.h
+init.o: init.cc datastruct.h debug.h fileIO.h
+main.o: main.cc datastruct.h debug.h init.h fileIO.h controller.h

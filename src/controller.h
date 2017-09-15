@@ -1,0 +1,13 @@
+bool isBallColliding(ball_t &ball, brick_t grid[rows][columns]);
+void keyboardControl(paddle_t &paddle,graphics_t &gfx);
+void checkBallEscaping(ball_t &ball, graphics_t &gfx,paddle_t & paddle);
+void blink_sprite(Sprite & s, int & times);
+bool isPaddleHitting(paddle_t &paddle, ball_t &ball);
+void editorMode(grid_t &grid , RenderWindow &game ,Event e);
+void spinBall(ball_t &ball);
+void slower(ball_t & ball);
+void faster(ball_t & ball);
+void playPauseButton(gamestatus newStatus);
+void pauseDelay(ball_t &ball, paddle_t &paddle);
+bool isGridPresent(brick_t grid[rows][columns]);
+void winTheGame();
